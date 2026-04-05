@@ -19,12 +19,11 @@ Open [http://localhost:3000](http://localhost:3000) — you'll be redirected to 
 
 | Role    | Email               | Password     |
 |---------|---------------------|--------------|
-| Teacher | sarah@school.fr     | teacher123   |
-| Teacher | karim@school.fr     | teacher123   |
-| Student | alice@school.fr     | student123   |
-| Student | baptiste@school.fr  | student123   |
-| Student | chloe@school.fr     | student123   |
-| Student | dylan@school.fr     | student123   |
+| Teacher | youssfi@enset.ma    | teacher123   |
+| Teacher | ouhmidas@enset.ma   | teacher123   |
+| Student | toubani@enset.ma    | student123   |
+| Student | bahou@enset.ma      | student123   |
+| Student | aymane@semlalia.ma  | student123   |
 
 ---
 

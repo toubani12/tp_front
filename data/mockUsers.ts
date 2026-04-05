@@ -1,54 +1,48 @@
 import { User } from "@/types";
+import { userIds } from "./mockIds";
 
 export const mockUsers: User[] = [
   {
-    id: "teacher-1",
-    name: "Prof. Sarah Dupont",
-    email: "sarah@school.fr",
+    id: userIds.teacher1,
+    name: "M. YOUSSFI Mohamed ",
+    email: "youssfi@enset.ma",
     password: "teacher123",
     role: "teacher",
-    avatarInitials: "SD",
+    avatarInitials: "YM",
   },
   {
-    id: "teacher-2",
-    name: "M. Karim Benali",
-    email: "karim@school.fr",
+    id: userIds.teacher2,
+    name: "Mme. OUHMIDA Asmae ",
+    email: "ouhmidas@enset.ma",
     password: "teacher123",
     role: "teacher",
-    avatarInitials: "KB",
+    avatarInitials: "OA",
   },
   {
-    id: "student-1",
-    name: "Alice Martin",
-    email: "alice@school.fr",
+    id: userIds.student1,
+    name: "Toubani Badr eddine",
+    email: "toubani@enset.ma",
     password: "student123",
     role: "student",
-    avatarInitials: "AM",
+    avatarInitials: "TB",
   },
   {
-    id: "student-2",
-    name: "Baptiste Leroy",
-    email: "baptiste@school.fr",
+    id: userIds.student2,
+    name: "Bahou houdaifa",
+    email: "bahou@enset.ma",
     password: "student123",
     role: "student",
-    avatarInitials: "BL",
+    avatarInitials: "BH",
   },
   {
-    id: "student-3",
-    name: "Chloé Faure",
-    email: "chloe@school.fr",
+    id: userIds.student3,
+    name: "AARAB AYMANE",
+    email: "aymane@semlalia.ma",
     password: "student123",
     role: "student",
-    avatarInitials: "CF",
+    avatarInitials: "AA",
   },
-  {
-    id: "student-4",
-    name: "Dylan Rousseau",
-    email: "dylan@school.fr",
-    password: "student123",
-    role: "student",
-    avatarInitials: "DR",
-  },
+
 ];
 
 export const getStudents = () => mockUsers.filter((u) => u.role === "student");
