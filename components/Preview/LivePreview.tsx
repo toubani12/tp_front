@@ -1,26 +1,12 @@
 "use client";
 
-import React, { useRef, useEffect } from "react";
+import React from "react";
 
 interface LivePreviewProps {
   html: string;
 }
 
 export default function LivePreview({ html }: LivePreviewProps) {
-  const iframeRef = useRef<HTMLIFrameElement>(null);
-
-  useEffect(() => {
-    const iframe = iframeRef.current;
-    if (!iframe) return;
-
-    const doc = iframe.contentDocument || iframe.contentWindow?.document;
-    if (!doc) return;
-
-    doc.open();
-    doc.write(html || "<html><body></body></html>");
-    doc.close();
-  }, [html]);
-
   return (
     <div className="relative h-full flex flex-col bg-white rounded-lg overflow-hidden border border-gray-200">
       {/* Preview header */}
@@ -42,7 +28,7 @@ export default function LivePreview({ html }: LivePreviewProps) {
 
       {/* iframe */}
       <iframe
-        ref={iframeRef}
+        srcDoc={html || "<html><body></body></html>"}
         className="flex-1 w-full bg-white"
         sandbox="allow-scripts"
         title="Live Preview"
