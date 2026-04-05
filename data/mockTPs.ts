@@ -1,14 +1,15 @@
 import { TP } from "@/types";
+import { tpIds, userIds } from "./mockIds";
 
 export const mockTPs: TP[] = [
   {
-    id: "tp-1",
+    id: tpIds.tp1,
     title: "My First HTML Page",
     description:
       "Build a complete HTML page with a title, a paragraph of text, and an interactive button.",
     difficulty: "beginner",
     estimatedMinutes: 20,
-    createdBy: "teacher-1",
+    createdBy: userIds.teacher1,
     createdAt: "2024-01-10T09:00:00Z",
     starterHTML: `<!DOCTYPE html>
 <html lang="en">
@@ -117,13 +118,13 @@ export const mockTPs: TP[] = [
     ],
   },
   {
-    id: "tp-2",
+    id: tpIds.tp2,
     title: "HTML Forms Basics",
     description:
       "Create an HTML form with inputs, labels, and a submit button.",
     difficulty: "intermediate",
     estimatedMinutes: 35,
-    createdBy: "teacher-1",
+    createdBy: userIds.teacher1,
     createdAt: "2024-01-15T10:00:00Z",
     starterHTML: `<!DOCTYPE html>
 <html lang="en">
@@ -208,13 +209,13 @@ export const mockTPs: TP[] = [
     ],
   },
   {
-    id: "tp-3",
+    id: tpIds.tp3,
     title: "CSS Styling Fundamentals",
     description:
       "Style an HTML page using both inline styles and a <style> block.",
     difficulty: "beginner",
     estimatedMinutes: 25,
-    createdBy: "teacher-2",
+    createdBy: userIds.teacher2,
     createdAt: "2024-01-20T11:00:00Z",
     starterHTML: `<!DOCTYPE html>
 <html lang="en">

@@ -16,7 +16,9 @@ export default function LoginPage() {
     setLoading(true);
     const ok = await login(email, password);
     if (!ok) {
-      setError("Invalid email or password. Try sarah@school.fr / teacher123");
+      setError(
+        "Invalid email or password. Try youssfi@enset.ma / teacher123"
+      );
       setLoading(false);
     }
   };
@@ -95,24 +97,54 @@ export default function LoginPage() {
           </p>
           <div className="grid grid-cols-2 gap-2">
             <button
-              onClick={() => quickLogin("sarah@school.fr", "teacher123")}
+              onClick={() => quickLogin("youssfi@enset.ma", "teacher123")}
               className="text-left p-3 rounded-xl bg-[#1e1e2e] hover:bg-[#313244] transition-colors border border-[#313244]"
             >
               <p className="text-xs text-[#cba6f7] font-mono">TEACHER</p>
               <p className="text-sm text-white font-medium mt-0.5">
-                Prof. Sarah
+                M. Youssfi Mohamed
               </p>
-              <p className="text-xs text-[#45475a]">sarah@school.fr</p>
+              <p className="text-xs text-[#45475a]">youssfi@enset.ma</p>
             </button>
             <button
-              onClick={() => quickLogin("alice@school.fr", "student123")}
+              onClick={() => quickLogin("ouhmidas@enset.ma", "teacher123")}
+              className="text-left p-3 rounded-xl bg-[#1e1e2e] hover:bg-[#313244] transition-colors border border-[#313244]"
+            >
+              <p className="text-xs text-[#cba6f7] font-mono">TEACHER</p>
+              <p className="text-sm text-white font-medium mt-0.5">
+                Mme. Ouhmida Asmae
+              </p>
+              <p className="text-xs text-[#45475a]">ouhmidas@enset.ma</p>
+            </button>
+            <button
+              onClick={() => quickLogin("toubani@enset.ma", "student123")}
               className="text-left p-3 rounded-xl bg-[#1e1e2e] hover:bg-[#313244] transition-colors border border-[#313244]"
             >
               <p className="text-xs text-[#89b4fa] font-mono">STUDENT</p>
               <p className="text-sm text-white font-medium mt-0.5">
-                Alice Martin
+                Toubani Badr eddine
               </p>
-              <p className="text-xs text-[#45475a]">alice@school.fr</p>
+              <p className="text-xs text-[#45475a]">toubani@enset.ma</p>
+            </button>
+            <button
+              onClick={() => quickLogin("bahou@enset.ma", "student123")}
+              className="text-left p-3 rounded-xl bg-[#1e1e2e] hover:bg-[#313244] transition-colors border border-[#313244]"
+            >
+              <p className="text-xs text-[#89b4fa] font-mono">STUDENT</p>
+              <p className="text-sm text-white font-medium mt-0.5">
+                Bahou houdaifa
+              </p>
+              <p className="text-xs text-[#45475a]">bahou@enset.ma</p>
+            </button>
+            <button
+              onClick={() => quickLogin("aymane@semlalia.ma", "student123")}
+              className="text-left p-3 rounded-xl bg-[#1e1e2e] hover:bg-[#313244] transition-colors border border-[#313244]"
+            >
+              <p className="text-xs text-[#89b4fa] font-mono">STUDENT</p>
+              <p className="text-sm text-white font-medium mt-0.5">
+                Aarab Aymane
+              </p>
+              <p className="text-xs text-[#45475a]">aymane@semlalia.ma</p>
             </button>
           </div>
         </div>
